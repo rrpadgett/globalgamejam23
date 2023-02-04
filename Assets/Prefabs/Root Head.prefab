@@ -12,11 +12,8 @@ GameObject:
   - component: {fileID: 2183986731304697508}
   - component: {fileID: 6972749847799684068}
   - component: {fileID: 3496686047955558444}
-  - component: {fileID: 342658685357637225}
   - component: {fileID: 1686018013}
   - component: {fileID: 1686018014}
-  - component: {fileID: 1147303161317177241}
-  - component: {fileID: 3293708725355337087}
   m_Layer: 0
   m_Name: Root Head
   m_TagString: Untagged
@@ -108,18 +105,6 @@ MonoBehaviour:
   BodyPrefab: {fileID: 3008829240421272140, guid: 79e24396c5e19421880bdff42e45299a, type: 3}
   isMoving: 0
   boost: 0
---- !u!114 &342658685357637225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4173518490679927997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bb6ba3936ff3409382a745f44dda51f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!135 &1686018013
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -232,32 +217,3 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!54 &1147303161317177241
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4173518490679927997}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
---- !u!135 &3293708725355337087
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4173518490679927997}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
