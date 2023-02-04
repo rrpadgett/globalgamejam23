@@ -18,6 +18,7 @@ public class CollisionHandler : MonoBehaviour
                 break;
             case "Water":
                 root.boost = true;
+                break;
             default:
                 root.boost = false;
                 break;
