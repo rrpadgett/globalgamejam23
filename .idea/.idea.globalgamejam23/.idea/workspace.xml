@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d5931d3-92dc-4b89-a0b1-6ed2b56c5468" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RootController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RootController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.globalgamejam23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.globalgamejam23/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.sequences/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.sequences/Settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +72,7 @@
       <updated>1675515992050</updated>
       <workItem from="1675516015609" duration="5000" />
       <workItem from="1675516322583" duration="17000" />
-      <workItem from="1675516418106" duration="4647000" />
+      <workItem from="1675516418106" duration="6526000" />
     </task>
     <servers />
   </component>
