@@ -1,9 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class RootController : MonoBehaviour
 {
+    public static RootController instance;
+    
     public float MoveSpeed = 5;
     public float SteerSpeed = 10;
     int index = 0;
@@ -22,7 +25,12 @@ public class RootController : MonoBehaviour
     // Lists
     private List<GameObject> BodyParts = new List<GameObject>();
     private List<Vector3> PositionsHistory = new List<Vector3>();
-   
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
