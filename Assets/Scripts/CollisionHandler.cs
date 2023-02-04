@@ -14,10 +14,10 @@ public class CollisionHandler : MonoBehaviour
            case "Danger":
                 Debug.Log("Danger");
                 collideCounter++;
-                root.boost = true;
+                // finish game
                 break;
-            case "Finish":
-      
+            case "Water":
+                root.boost = true;
                 break;
             default:
                 root.boost = false;

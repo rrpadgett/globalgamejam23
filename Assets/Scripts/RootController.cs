@@ -30,9 +30,12 @@ public class RootController : MonoBehaviour
         RotateRoot();
 
         if(Input.GetKeyDown("space")){
-            boost = true;
-        } else {
-            boost = false;
+            SlowDown();
+        }
+
+        // Bugfix 
+        if (BodyParts.Count > 1) {
+            Destroy(BodyParts[0]);
         }
     }
 
@@ -46,12 +49,11 @@ public class RootController : MonoBehaviour
     void FollowMouse()
     {
         pos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
+        if (boost) { 
+            SpeedUp();
+        } 
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(pos.x, 0.0f, pos.z), speed * Time.deltaTime);
-        if (!boost) {
-            transform.position = Vector3.MoveTowards(transform.position, new Vector3(pos.x, 0.0f, pos.z), speed * Time.deltaTime);
-        } else {
-            transform.position = Vector3.MoveTowards(transform.position, new Vector3(pos.x, 0.0f, pos.z), 0.9f);
-        }
+
         
         // Store position history
         PositionsHistory.Insert(0, transform.position);
@@ -60,6 +62,7 @@ public class RootController : MonoBehaviour
                 GrowRoot();
             }
         }
+        
     }
 
     void RotateRoot()
@@ -67,6 +70,21 @@ public class RootController : MonoBehaviour
         angle += Input.GetAxis("Mouse X") * RootSpeed * -Time.deltaTime;
         angle = Mathf.Clamp(angle, -90, 270);
         transform.localRotation = Quaternion.AngleAxis(angle, Vector3.up);
+    }
+
+    void SpeedUp()
+    {
+        if(speed < 4){ //maxspeed
+            speed = speed + 0.5f;
+        }
+    }
+
+    void SlowDown()
+    {
+        if(speed > 0)
+        {
+            speed = speed - 1;
+        }
     }
 
 }
