@@ -8,7 +8,7 @@ public class RootController : MonoBehaviour
     public float speed = 0.01f;
     float angle;
     public float RootSpeed;
-
+    public bool boost = false;
 
     // References
     public GameObject BodyPrefab;
@@ -40,7 +40,7 @@ public class RootController : MonoBehaviour
 
     void GrowRoot(){
             GameObject body = Instantiate(BodyPrefab);
-            Vector3 point = PositionsHistory[index];
+            Vector3 point = PositionsHistory[0];
             body.transform.position = transform.position;
             BodyParts.Add(body);
     }
